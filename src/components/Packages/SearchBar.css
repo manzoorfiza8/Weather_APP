@@ -1,0 +1,28 @@
+/* SearchBar.css */
+
+.search-bar {
+    display: inline-block;
+    Width: 70px;
+  }
+  
+  .search-input {
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Add rounded corners */
+    padding: 8px;
+    margin-right: 8px;
+    width: 500px; /* Adjust the width as needed */
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* Add rounded corners */
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

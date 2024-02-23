@@ -1,0 +1,81 @@
+.imageContainer {
+  /* Set the width and height as needed */
+  /* width: 100%; */
+  /* height: 300px; Adjust the height as per your requirement */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Center the image within the container */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent; /* Use a transparent background */
+    padding: 10px 20px;
+   color: #fff;
+    border-bottom: 2px solid #0f0f0f;
+    text-decoration-color: #f86605;
+  }
+  
+  .navbar-left {
+    flex: 1;
+  }
+  
+  .navbar-center {
+    flex: 2;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .navbar-center a {
+    color: #fff;
+    text-decoration: seagreen;
+    margin: 0 20px;
+    font-size: 20px;
+  }
+  .navbar-right a:hover {
+    color: seagreen; /* Change the color on hover */
+  }
+  .navbar-right {
+    flex: 1;
+    display: flex;
+    font-weight: bold;
+    align-items: center; /* Vertically align items within the container */
+  }
+  
+  .navbar-right a,
+  .btn-signin {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 20px; /* Add some right margin to separate the elements */
+    line-height: 1; 
+    text-decoration: none;/* Adjust the line-height to vertically center the text */
+  }
+  
+  .btn-signin {
+    background-color: rgb(122, 196, 154);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+    
+  
+  .logo {
+    max-width: 100px; 
+    font-size: xx-large;/* Adjust the logo size as needed */
+    font-weight: bold; /* Add this line to make the text bold */
+
+  }
+  .headerTitle{
+    color:#fff;
+    padding-left:55px;
+    padding-bottom: 12px;
+  }
+  .h1{
+    color:#fff;
+    margin-left: 5px;
+  }
