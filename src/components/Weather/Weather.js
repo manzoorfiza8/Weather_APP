@@ -16,7 +16,7 @@ function Weather() {
       const data =await getFormatedWeatherData(city,units);
     setWeather(data)
     console.log(data)
-    const threshold = units === "metric" ? 20 :60;
+    const threshold = units === "metric" ? 39 :60;
     if (data.temp <= threshold) setbg(cloudy);
     else setbg(hotbg)
     };
@@ -56,7 +56,7 @@ function Weather() {
           <div className="section section__temperature">
             <div className="icon">
              <h3>{`${weather.name},${weather.country}`}</h3>
-             <img src={weather.iconURL} alt='temperature'></img>
+             <img src={hotbg.iconURL} alt='temperature'></img>
              <h3>{weather.description}</h3>
             </div>
   
@@ -66,11 +66,9 @@ function Weather() {
             </div>
           </div>
          {/* bottom description */}
-         <Description weather={weather } units={units} />
- 
+         <Description weather={weather } units={units} /> 
           </div>
-         )}
-       
+         )}      
       </div>
       </div>
     </div>

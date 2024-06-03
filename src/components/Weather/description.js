@@ -1,7 +1,7 @@
 import React from 'react'
 import "./description.css"
-import { getFormatedWeatherData } from "./WeatherService" ;
-// import { FaArrowDown ,FaArrowUp,FaWind} from "react-icons/fa"
+// import { getFormatedWeatherData } from "./WeatherService" ;
+import { FaArrowDown ,FaArrowUp,FaWind} from "react-icons/fa"
 // import { BiHappy } from "react-icons/bi";
 // import {Mdcompress,MdOutlineWaterDrop}
 
@@ -13,41 +13,41 @@ const description = ({weather,units}) => {
   const cards = [
     {
       id:1,
-      // icon : <FaArrowDown />,
+      icon : <FaArrowDown />,
       title: "min",
       data : weather.temp_min.toFixed(),
       unit: tempUnit,
     },
     {
       id:2,
-      // icon: <FaArrowUp />,
+      icon: <FaArrowUp />,
       title: "max",
       data : weather.temp_max.toFixed(),
       unit: tempUnit,
     },
     {
       id:3,
-      // icon: <FaArrowDown />,
+      icon: <FaArrowDown />,
       title: "Feels Like",
       data : weather.feels_like.toFixed(),
       unit: tempUnit,
     },
     {
       id:4,
-      // icon: <FaArrowDown />,
+      icon: <FaArrowDown />,
       title: "Pressure",
       data : weather.pressure,
       unit: "hPa",
     },
  {
       id:5,
-      // icon: <FaArrowDown />,
+      icon: <FaArrowDown />,
       title: "Humidity",
       data : weather.humidity,
       unit: "%",
     },{
       id:6,
-      // icon: <FaArrowDown />,
+      icon: <FaWind />,
       title: "wind Speed",
       data : weather.speed.toFixed(),
       unit: windUnit,
@@ -55,7 +55,7 @@ const description = ({weather,units}) => {
   ];
   return (
    <div className="section section__description">
-      {cards.map(({id,title,data,unit}) => (
+      {cards.map(({id,icon,title,data,unit}) => (
         <div  key={id} className="card">
         <div className="description__card-icon">
         {/* icon */}
